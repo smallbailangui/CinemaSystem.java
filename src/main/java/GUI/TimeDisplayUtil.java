@@ -6,6 +6,11 @@ import java.awt.event.ActionEvent;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+/*
+*
+*
+*
+*/
 public class TimeDisplayUtil {
 
     public static void addTimeDisplay(JFrame frame) {
@@ -22,7 +27,7 @@ public class TimeDisplayUtil {
         frame.add(timePanel, BorderLayout.SOUTH);
 
         // 使用 Timer 定期更新时间
-        Timer timer = new Timer(1000, (ActionEvent e) -> {
+        Timer timer = new Timer(1, (ActionEvent e) -> {
             String dateTimeString = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date());
             timeLabel.setText(dateTimeString);
         });
