@@ -1,6 +1,6 @@
 package test_for_git;
 
-import javax.swing.*;
+
 
 public class test {
     public static void main(String[] args) {
